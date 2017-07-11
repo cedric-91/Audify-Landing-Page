@@ -1,0 +1,45 @@
+@import "../_variables"
+
+.who-we-are
+  height: 950px
+  background: url(../img/meet-the-team.jpg) 0 0 no-repeat
+  background-size: cover
+  position: relative
+  &:before
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: rgba(0,0,0, 0.8)
+  .content-info
+    color: white
+    z-index: 1
+    +transform(scale(0))
+    +transition(transform 500ms ease-in-out 0s)
+
+/*** Large Screen ***/
+@media screen and (max-width: $extra-large-screen)
+  .who-we-are
+    height: 575px
+    background: url(../img/meet-the-team.jpg) 42.5% no-repeat
+
+/*** Medium Screen ***/
+@media screen and (max-width: $medium-screen)
+  .who-we-are
+    height: 575px
+    //background: url(../img/meet-the-team.jpg) 42.5% no-repeat
+    background: url(../img/meet-the-team.jpg) 45.5% 20% no-repeat
+    .content-info
+      position: absolute
+      top: 50%
+      left: 0px
+      //+transform(translate(-50%, -50%))
+      color: white
+
+/*** Small Screen ***/
+@media screen and (max-width: $small-screen)
+  .who-we-are
+    height: 475px
+    background: url(../img/meet-the-team.jpg) 30.5% 1.5% no-repeat

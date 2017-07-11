@@ -1,0 +1,209 @@
+@import "../_variables"
+@import "../0-plugins/_mixings"
+@import "../1-base/_base"
+.individuals-section
+  height: 1075px
+  background: white url(../parallax-img/individual/individuals-bg.jpg) 100% 82.5% no-repeat
+  overflow: hidden
+  #individuals
+    width: 100%
+    .layer
+      .focus
+        width: 15.5%
+        margin-left: 50%
+        //margin-top: 7.5%
+        +transform(translateX(-50%))
+      .foreground
+        margin-top: 30.5%
+        margin-left: -15.5%
+        +transform(translateY(-15.5%))
+
+  .content
+    +transition(all 500ms ease-in-out 0s)
+    .inner-content
+      position: relative
+      top: 50%
+      +transform(translate(0, -50%))
+      padding: 0 3.0em
+    .individuals-section, .inner-content h2
+      width: 400px
+    .content-left
+      left: 0
+
+    .content-right
+      right: 0
+
+/*** Extra Large Screen ****/
+@media screen and (max-width: $extra-large-screen)
+  .individuals-section
+    //background: white url(../img/individuals.jpg) 25% 0 no-repeat
+    +background-size(cover)
+    #individuals
+      width: 100%
+      .layer
+        .focus
+          width: 20.5em
+          margin-left: 50%
+          margin-top: 5.0em
+          +transform(translateX(-50%))
+        .foreground
+          margin-top: 26.5%
+          margin-left: -15.5%
+          //+transform(translateY(-27.5%))
+
+/*** Extra Medium Large Screen ****/
+@media screen and (max-width: $extra-medium-large-screen)
+  .individuals-section
+    //background: white url(../img/individuals.jpg) 25% 0 no-repeat
+    +background-size(cover)
+    #individuals
+      width: 100%
+      .layer
+        .focus
+          width: 17.5em
+          margin-left: 50%
+          margin-top: 17em
+          +transform(translateX(-50%))
+        .foreground
+          margin-top: 54.5em
+          margin-left: -15.5%
+          //+transform(translateY(-27.5%))
+
+/*** Extra Small Large Screen ***/
+@media screen and (max-width: $extra-small-large-screen)
+  .individuals-section
+    //background: white url(../img/individuals.jpg) 25% 0 no-repeat
+    //+background-size(cover)
+    //#individuals
+      width: 100%
+      .layer
+        .focus
+          width: 20%
+          margin-left: 50%
+          margin-top: 8.5em
+          +transform(translateX(-50%))
+        .foreground
+          margin-top: 27.5%
+          margin-left: -15.5%
+          //+transform(translateY(-27.5%))
+
+/*** Medium Medium Screen ****/
+@media screen and (max-width: $medium-screen)
+  .individuals-section
+    height: 675px
+    //background: white url(../img/individuals.jpg) 50% 50% no-repeat
+    //+background-size(cover)
+    #individuals
+      width: 100%
+      .layer
+        .focus
+          width: 10em
+          margin-left: 50%
+          margin-top: 10em
+          +transform(translate(-50%, 10%))
+        .foreground
+          margin-top: 28.8em
+          margin-left: -15.5%
+          +transform(translateY(-14.5%))
+    .content
+      width: 100%
+      //height: inherit
+      .inner-content
+        h2
+          font-size: $medium-font-header
+        .lead-text
+          width: 450px
+
+/*** Medium Large Screen ****/
+@media screen and (max-width: $medium-large-screen)
+  .individuals-section
+    height: 675px
+    //background: white url(../img/individuals.jpg) 50% 50% no-repeat
+    //+background-size(cover)
+    #individuals
+      width: 100%
+      .layer
+        .focus
+          width: 12.5em
+          margin-left: 50%
+          margin-top: 3.5em
+          +transform(translate(-50%, 10%))
+        .foreground
+          margin-top: 14.5%
+          margin-left: -15.5%
+          +transform(translateY(-14.5%))
+    .content
+      width: 100%
+      //height: inherit
+      .inner-content
+        h2
+          margin-bottom: 0.4em
+          padding: -0.2em 0
+        .lead-text
+          width: 450px
+
+/*** Medium Small Screen ****/
+@media screen and (max-width: $medium-small-screen)
+  .individuals-section
+    height: 675px
+    //background: white url(../img/individuals.jpg) 100% no-repeat
+    //+background-size(cover)
+    //#individuals
+      width: 100%
+      .layer
+        .focus
+          width: 45.5%
+          margin-left: 50%
+          margin-top: 32.5%
+          +transform(translate(-50%, 10.5%))
+        .foreground
+          margin-top: 14.5%
+          margin-left: -15.5%
+          +transform(translateY(-15.5%))
+
+
+/*** Extra Small Small Screen ****/
+@media screen and (max-width: $extra-small-large-screen)
+  .individuals-section
+    //background: white url(../img/individuals.jpg) 50% 50% no-repeat
+    //+background-size(cover)
+    #individuals
+      //display: none
+/*** Small Screen ****/
+@media screen and (max-width: $small-screen)
+  .individuals-section
+    //height: 675px
+    //background: white url(../img/individuals.jpg) 50% 50% no-repeat
+    //+background-size(cover)
+
+    .content
+      width: 100%
+
+      .inner-content
+        h2
+          margin-bottom: -0.4em
+          padding: -0.2em 0
+          font-size: 30px
+        .green-text
+          margin-bottom: 10px
+        .lead-text
+          width: 250px
+
+
+@media screen and (max-width: 1465px) and (min-width: $medium-large-screen)
+  .individuals-section
+    //height: 675px
+    //background: white url(../img/individuals.jpg) 100% no-repeat
+    //+background-size(cover)
+    #individuals
+      width: 100%
+      .layer
+        .focus
+          width: 17.5em
+          margin-left: 50%
+          margin-top: 11.5em
+          +transform(translate(-50%, 10.5%))
+        .foreground
+          margin-top: 52.5em
+          margin-left: -15.5%
+          +transform(translateY(-15.5%))

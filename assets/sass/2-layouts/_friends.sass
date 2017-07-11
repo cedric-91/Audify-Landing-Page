@@ -1,0 +1,149 @@
+@import "../_variables"
+
+.friends-section
+  height: 1125px
+  background: white url(../parallax-img/family/family-bg.jpg) 100% 85.5% no-repeat
+  //background: white url(../img/family.jpg) 20% -10% no-repeat
+  +background-size(cover)
+  overflow: hidden
+  background-position: center bottom
+  #family-para
+    .focus
+      width: 75.5%
+    .foreground
+      width: 100%
+  .content
+    +transition(all 500ms ease-in-out 0s)
+
+/*** Large Screen ***/
+@media screen and (max-width: $extra-large-screen)
+  .friends-section
+    height: 875px
+    #family-para
+      .focus
+        width: 95.5em
+        margin-top: -4em
+        margin-left: 10em
+      .foreground
+        width: 100%
+    .content
+      .inner-content
+        h2
+          margin-bottom: 0.4em
+        .btn-link
+          position: relative
+          top: 2.0em
+          //font-size: 0.87em
+          padding: 1.2em 2.5em
+
+
+/*** Extra Small Large Screen ***/
+@media screen and (max-width: $extra-small-large-screen)
+  .friends-section
+    height: 875px
+    //background: white url(../img/family.jpg) 20% -10% no-repeat
+    +background-size(cover)
+    #family-para
+      .focus
+        width: 91%
+        margin-top: -1.5em
+        margin-left: 8em
+      .foreground
+        width: 100em
+        margin-left: -1.2em
+    .content
+      .inner-content
+        h2
+          margin-bottom: 0.4em
+        .btn-link
+          font-size: 0.88em
+
+/*** Medium Screen ***/
+@media screen and (max-width: $medium-screen)
+  .friends-section
+    #family-para
+      .focus
+        width: 55.5em
+        margin-top: 10.5em
+      .foreground
+        width: 70em
+        margin-left: -1.2em
+    .content
+      .inner-content
+
+        .btn-link
+          //font-size: 0.8em
+
+/*** Medium Screen ***/
+@media screen and (max-width: $medium-large-screen)
+  .friends-section
+    height: 675px
+    //background: white url(../img/family.jpg) 20% -10% no-repeat
+    //+background-size(cover)
+    #family-para
+      .focus
+        width: 55.5em
+        margin-top: -0.5em
+      .foreground
+        width: 70em
+        margin-left: -1.2em
+    //.content
+      width: 100%
+      .inner-content
+        h2
+          margin-bottom: 0.4em
+        .btn-link
+          position: relative
+          top: 2.0em
+          //font-size: 0.87em
+          //padding: 1.2em 2.5em
+
+
+/*** Medium Screen ***/
+@media screen and (max-width: $medium-small-screen)
+  .friends-section
+    height: 675px
+    //background: white url(../img/family.jpg) 20% -10% no-repeat
+    //+background-size(cover)
+    #family-para
+      .focus
+        width: 43.5em
+        margin-top: 8.5em
+        margin-left: -5em
+      .foreground
+        width: 70em
+        margin-left: -1.2em
+        margin-top: -2em
+    .content
+      width: 100%
+      .inner-content
+        h2
+          margin-bottom: 0.4em
+        .btn-link
+          position: relative
+          top: 2.0em
+          //font-size: 0.87em
+          //padding: 1.2em 2.5em
+
+
+/*** Small Screen ***/
+@media screen and (max-width: $small-screen)
+  .friends-section
+    //height: 875px
+    #family-para
+      .focus
+        width: 33.5em
+        margin-top: 16.5em
+        margin-left: -3.5em
+      .foreground
+        width: 70em
+        margin-left: -1.2em
+    .content
+      width: 100%
+      .inner-content
+        h2
+          margin-bottom: 0.4em
+        .btn-link
+          position: relative
+          top: 2.0em
+          font-size: 0.57em

@@ -1,0 +1,88 @@
+@import "../_variables"
+
+body
+  line-height: 1.2
+  overflow-x: hidden
+
+h1,h2,h3,h4,h5,h6
+  font-family: $main-font
+  font-weight: bold
+  margin: 0
+
+h1
+  font-size: 69.3px
+
+h2
+  font-size: 48px
+
+p
+  font-weight: 400
+  margin: 0
+  line-height: 1.5
+  font-family: $main-font
+
+ul, ol
+  margin: 0
+
+
+//img
+  width: 100%
+  height: auto
+
+/*** Responsive View ***/
+$extra-large-screen: 2046px
+$extra-medium-large-screen: 1840px
+$extra-small-large-screen: 1767px
+// Medium
+$medium-large-screen: 1014px
+$medium-screen: 888px
+$medium-small-screen: 768px
+// Small Screen
+$small-screen: 420px
+$smaller-screen: 320px
+
+
+// Font-Medium-sizes
+$medium-font-header: 40px
+$medium-font-text: 16.5px
+$medium-btn-text: 18px
+// Font-Small-sizes
+$small-font-main-header: 42.1px
+$small-font-header: 34.6px
+$small-text: 12px
+$small-btn-text: 17.3px
+
+@media screen and (max-width: $medium-screen)
+  body
+    overflow-x: hidden
+  h2
+    font-size: $medium-font-header
+  p
+    font-size: $medium-font-text
+  .btn-link
+    font-size: $medium-btn-text
+
+@media screen and (max-width: $small-screen)
+  h1
+    font-size: $small-font-main-header
+
+  h2
+    font-size: $small-font-header
+  p
+    font-size: $small-text
+
+  .btn-link
+    font-size: $small-btn-text
+
+/*** Smaller Screen ****/
+@media screen and (max-width: $smaller-screen)
+  h1
+    font-size: $small-font-main-header
+
+  h2
+    font-size: 30px
+  p
+    font-size: $small-text
+
+  .btn-link
+    font-size: $small-btn-text

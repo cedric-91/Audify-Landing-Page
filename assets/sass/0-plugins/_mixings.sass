@@ -1,0 +1,65 @@
+/*** Transition ***/
+=transition($speed)
+  -webkit-transition: $speed
+  -moz-transition: $speed
+  -o-transition: $speed
+  transition: $speed
+
+/*** Box-Sizing ***/
+=box-sizing($box)
+  -webkit-box-sizing: $box
+  -moz-box-sizing: $box
+  box-sizing: $box
+
+/*** Transform ***/
+=transform($form)
+  -webkit-transform: $form
+  -moz-transform: $form
+  -ms-transform: $form
+  -o-transform: $form
+  transform: $form
+
+/*** Box Shadow ****/
+=box-shadow($shadow)
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  box-shadow: $shadow
+
+/*** Background Size ***/
+=background-size($size)
+  -webkit-background-size: $size
+  -moz-background-size: $size
+  -o-background-size: $size
+  background-size: $size
+
+/*** Justify Content ***/
+=justify-content($content)
+  -webkit-justify-content: $content
+  -moz-justify-content: $content
+  justify-content: $content
+
+/*** Align Items ***/
+=align-items($items)
+  -webkit-align-items: $items
+  align-items: $items
+  
+/*** Flex ***/
+=flex
+  display: table        /* IE < 10, Opera *Presto* Desktop (Now dead) */
+  display: -webkit-box /* Safari 3.1 - 6, Chrome < 21 (2009 Spec), UCBrowser Android */
+  display: -moz-box     /* Firefox 2 - 27 (2009 Spec), UCMini Android */
+  display: -ms-flexbox /* IE10 (2012 Syntax) */
+  display: -webkit-flex /* Safari 6.1 - 8, Android < 4.4, BB < 10, Chrome 21 - 28 */
+  display: flex        /* Edge 12+, Firefox 28+, Blink, Safari 9+, Opera Mini 8+ */
+
+/*** Flex Direction ***/
+=flex-direction($direction)
+  -webkit-flex-direction: $direction
+  flex-direction: $direction
+
+/*** Animation ***/
+=animation($animate)
+  -webkit-animation: $animate
+  -moz-animation: $animate
+  -o-animation: $animate
+  animation: $animate

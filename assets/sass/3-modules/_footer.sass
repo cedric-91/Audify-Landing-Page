@@ -1,0 +1,76 @@
+@import "../_variables"
+
+footer
+  height: 575px
+  color: white
+  .content-info
+    //background: pink
+    +transform(scale(0))
+    +transition(transform 400ms ease-in 0s)
+    .green-text
+      margin-bottom: 25px
+    .btn-link
+      margin-top: 20px
+
+/*** Large Screen ***/
+@media screen and (max-width: $extra-large-screen)
+  footer
+    height: 575px
+    color: white
+    .content-info
+      h2
+        width: 475px
+        margin-bottom: 0.4em
+      .green-text
+        margin-bottom: 40px
+      //.btn-link
+        font-size: 1.2em
+        padding: 1.2em 2.5em
+
+/*** Medium Large Screen ***/
+@media screen and (max-width: $medium-large-screen)
+  footer
+    height: 575px
+    color: white
+    .content-info
+      .green-text
+        margin-bottom: 40px
+      .btn-link
+
+/*** Medium Screen ***/
+@media screen and (max-width: $medium-screen)
+  footer
+    height: 575px
+    color: white
+    .content-info
+      .green-text
+        margin-bottom: 25px
+      .btn-link
+        top: 0.15em
+
+/*** Small Screen ***/
+@media screen and (max-width: $small-screen)
+  footer
+    height: 575px
+    color: white
+    .content-info
+      h2
+        font-size: $small-font-main-header
+        width: 300px
+      .green-text
+        margin-bottom: 40px
+      .btn-link
+
+/*** Small Screen ***/
+@media screen and (max-width: $smaller-screen)
+  footer
+    height: 575px
+    color: white
+    .content-info
+      h2
+        font-size: $small-font-main-header
+        width: 250px
+        font-size: 30px
+      .green-text
+        margin-bottom: 40px
+      .btn-link

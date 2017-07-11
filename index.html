@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Audify Landing Page</title>
+    <meta name="keywords" content="landing page, landing, page">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="assets/css/0-plugins/normalise.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+<body onload="init();">
+    <!-- Fixed navigation Section -->
+    <header>
+        <ul class="nav">
+          <li class="active first"><a href="#home">Home</a></li>
+          <li class="second"><a href="#individuals">Individuals</a></li>
+          <li class="third"><a href="#family">Family</a></li>
+          <li class="fourth"><a href="#society">Society</a></li>
+          <li class="fifth"><a href="#who-we-are">Who we are</a></li>
+          <li class="sixth"><a href="#what-we-do">What we do</a></li>
+          <li class="seven"><a href="#footer">Easy for you</a></li>
+        </ul>
+    </header>
+
+    <!-- Bilboard Section -->
+    <div class="bilboard-section gradient-1" id="home">
+      <div id="siri"></div>
+      <div class="content-info-bil">
+        <a href="./" class="logo"><img src="assets/img/audify-logo.png" alt="comapny-logo"></a>
+        <h1>Because <span class="green-text">hearing</span> is important</h1>
+      </div>
+      <a href="#individuals" class="down-arrow"></a>
+    </div>
+
+  <!-- Individual Section -->
+  <div class="individuals-section main-content">
+    <ul id="individuals" class="paralax-effect">
+      <!--<li class="layer" data-depth="0.00" id="background"><img src="assets/parallax-img/individual/individuals-bg.jpg" alt="background-img"></li>-->
+      <li class="layer img-focus" data-depth="0.20"><img src="assets/parallax-img/individual/individuals-focus.png" alt="img-focus" class="shapes focus"></li>
+      <li class="layer" data-depth="0.40"><img src="assets/parallax-img/individual/individuals-foreground.png" alt="img-foreground" class="shapes foreground"></li>
+    </ul>
+      <section class="content gradient-2 contnet-left">
+          <div class="inner-content">
+              <h2>Because hearing is important
+              for <span class="green-text green-text-header">individuals</span></h2>
+              <p class="lead-text">Hearing is one of our most important senses, connecting us in realtime to the world, to
+              people, and the opportunities of life.</p>
+              <p class="lead-text"><span class="green-text">Audify&reg;</span> is about keeping that connection strong and
+              constant, by looking after our hearing like we do our eyes and teeth.</p>
+              <a href="#" class="btn-link">Hearing for individuals</a>
+          </div>
+      </section>
+  </div>
+
+  <!-- Friends/Family Section -->
+  <div class="friends-section main-content" id="friends">
+      <ul id="family-para" class="paralax-effect">
+        <li class="layer" data-depth="0.20"><img src="assets/parallax-img/family/family-focus-min.png" alt="img-focus" class="shapes focus"></li>
+        <li class="layer" data-depth="0.40"><img src="assets/parallax-img/family/family-foreground.png" alt="img-foreground" class="shapes foreground"></li>
+      </ul>
+      <section class="content gradient-2 content-right">
+        <div class="inner-content">
+          <h2>Because hearing is important for <span class="green-text">friends</span>, <span class="green-text">family</span>
+            and <span class="green-text">colleagues</span></h2>
+            <p class="lead-text first-p">Hearing is one of our most important senses, connecting us in realtime to the world, to
+            people, and the opportunities of life.</p>
+            <p class="lead-text"><span class="green-text">Audify&reg;</span> is about keeping that connection strong and
+            constant, by looking after our hearing like we do our eyes and teeth.</p>
+            <a href="#" class="btn-link">Hearing for family, friends and collegues</a>
+        </div>
+      </section>
+  </div>
+
+  <!-- Society Section -->
+  <div class="society-section main-content" id="society">
+      <ul id="society" class="paralax-effect" data-limit-x="false">
+        <!--<li class="layer" data-depth="0.00" id="background"><img src="assets/parallax-img/society/society-bg.jpg" alt="background-img"></li>-->
+        <li class="layer" data-depth="0.20"><img src="assets/parallax-img/society/society-focus-min.png" alt="img-focus" class="shapes focus"></li>
+        <li class="layer" data-depth="0.40"><img src="assets/parallax-img/society/society-foreground.png" alt="img-foreground" class="shapes foreground"></li>
+      </ul>
+      <section class="content gradient-2 content-left">
+          <div class="inner-content">
+              <h2>Because hearing is important for <span class="green-text">society</span></h2>
+              <p class="lead-text">Hearing is one of our most important senses, connecting us in realtime to the world, to
+              people, and the opportunities of life.</p>
+              <p class="lead-text"><span class="green-text">Audify&reg;</span> is about keeping that connection strong and
+              constant, by looking after our hearing like we do our eyes and teeth.</p>
+          </div>
+      </section>
+  </div>
+
+  <!-- Who we are Section -->
+  <div id="who-we-are" class="who-we-are center">
+      <div class="content-info">
+          <h2>Who we <span class="green-text">are</span></h2>
+          <p class="lead-text">We're the Indepent Exeter-based practise that's been turning care on it's head.</p>
+          <p class="lead-text">We believe that hearing plays such a central role in life <span class="green-text">*</span>
+          , that we want people to have the best hearing they can. Everything we do revolves around this. (Take a look at our
+          <span class="green-text">Audorama&reg;</span>, and you'll see what we mean.)</p>
+      </div>
+  </div>
+
+  <!-- What we Do Section -->
+  <div id="what-we-do" class="gradient-3 what-we-do center">
+      <div class="content-info">
+        <h2>What we <span class="green-text">do</span></h2>
+
+        <!-- Maintain Section -->
+        <div class="details maintain">
+          <div class="text">
+            <h3>We enable you to <span class="green-text">MAINTAIN</span> your hearing</h3>
+            <p class="lead-text">Routine hearing checks, expert advice, and honest-to-goodness services
+            like wax-removal and tinnitus taming.</p>
+            <p>We even offer free half hour consultations ideal for toe-dipping. It gives you the
+            chance to have a chat, find out what we're about, see how we can help.</p>
+          </div>
+          <div class="icons" id="maintain">
+            <img src="assets/img/maintain-animation.svg" alt="maintain-logo" class="maintain">
+          </div>
+        </div>
+
+        <!-- Protect Hearing Section -->
+        <div class="details protect">
+          <div class="text">
+            <h3>We enable you to <span class="green-text">PROTECT</span> your hearing</h3>
+            <p class="lead-text">Custom hearing protection specially designed to keep your hearing safe,
+            we’re like personal bodyguards for musicians, DJs, sound engineers, concert-goers,
+            motorcyclists, swimmers, surfers, and shooters... (Well, for their ears at least.)</p>
+          </div>
+          <!-- Icons Sections -->
+          <div class="icons" id="protect">
+            <img src="assets/img/protect-animation.svg" alt="protect-animation" class="protect">
+            <!--<div id="protect_container" style="background-color:rgba(117, 70, 196, 0.00); width:150px; height:150px">
+          		<canvas id="protect_canvas" width="150" height="150" style="position: absolute; display: block; background-color:rgba(117, 70, 196, 0.00);"></canvas>
+          		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:150px; height:150px; position: absolute; left: 0px; top: 0px; display: block;">
+          		</div>
+          	</div>-->
+          </div>
+        </div>
+
+        <!-- Enhance Section -->
+        <div class="details enhance-cont" >
+          <div class="text">
+            <h3>We enable you to <span class="green-text">ENHANCE</span> your hearing</h3>
+            <p class="lead-text">We have some absolutely incredible hearing technology available, some
+            of which you won’t find anywhere else for miles around. More importantly, we know
+            how to get the best out of it.</p>
+            <p>But that’s not surprising, when you consider how personalised our approach is.
+            Why not take a look at some of our testimonials?</p>
+          </div>
+          <!-- Icons Sections -->
+          <div class="icons" id="enhance">
+            <!--<img src="assets/img/enhance-animation.svg" alt="protect-logo" class="enhance">-->
+            <div id="enhance_animation_container" style="background-color:rgba(204, 0, 255, 0.00); width:130px; height:130px">
+          		<canvas id="enhance_canvas" width="130" height="130" style="position: absolute; display: block; background-color:rgba(204, 0, 255, 0.00);"></canvas>
+          		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:130px; height:130px; position: absolute; left: 0px; top: 0px; display: block;">
+          		</div>
+          	</div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer id="footer" class="gradient-1 center">
+    <div class="content-info">
+      <h2>And finally, we make it easy <span class="green-text">for you</span></h2>
+      <p class="lead-text">with free client parking, complimentary WIFI, online booking (or by phone),
+      relaxing reception area, beautiful magazines, a warm welcome... and a hot beverage!</p>
+
+      <p class="green-text">Quite simply, we enjoy what we do!</p>
+      <a href="#" class="btn-link">Find out more</a>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="assets/js/deploy/jquery.parallax.min.js"></script>
+  <script src="assets/js/0-plugins/jquery.waypoints.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <!--<script src="assets/js/0-plugins/protect-animation.js"></script>
+  <script src="assets/js/0-plugins/protect-html.js"></script>-->
+  <script src="assets/js/0-plugins/enhance-animation.js"></script>
+  <script src="assets/js/0-plugins/enhance-html.js"></script>
+  <script src="assets/js/0-plugins/siriWave.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+@import "../_variables"
+@import "../1-base/_base-dir"
+
+.bilboard-section
+  height: 100vh
+  color: white
+  +flex
+  +justify-content(center)
+  +align-items(center)
+  +flex-direction(column)
+  background-position: center
+  overflow: hidden
+  #bilboard-scene
+    li
+      .shapes
+        width: 110vw
+  .content-info-bil
+    position: absolute
+    top: 60.5%
+    left: 50%
+    transform: translate(-50%, -50%)
+    margin-left: 50px
+    a.logo
+
+
+      img
+        //background: pink
+        position: relative
+        left: 50%
+        +transform(translateX(-50%))
+        margin-left: -50px
+    h1
+      width: 600px
+
+/*** Medium Screen ***/
+@media screen and (max-width: $medium-screen)
+  .bilboard-section
+    height: 100vh
+    color: white
+    +flex
+    justify-content: center
+    align-items: center
+    +flex-direction(column)
+    background-position: center
+    a.logo
+      margin-left: -50px
+    h1
+      width: 400px
+      margin-top: 40px
+      text-align: center
+    .green-text
+      padding-right: 2.2em
+      padding-left: 1.0em
+    .abstract-logo
+      position: absolute
+      max-width: 100%
+
+/*** Medium Small Screen ***/
+@media screen and (max-width: $medium-small-screen)
+  .bilboard-section
+    height: 100vh
+    color: white
+    #bilboard-scene
+      top: -20%
+
+    .content-info-bil
+      position: absolute
+      top: 40.5%
+      left: 50%
+      transform: translate(-50%, -50%)
+      margin-left: 50px
+      padding-left: 0
+      //background: pink
+      a.logo
+        img
+          margin-left: -50px
+          +transform(translateX(-50%))
+      h1
+        //background: red
+        width: 400px
+        margin-top: 40px
+        margin-left: -12.5%
+        //text-align: center
+      .green-text
+        padding-right: 26.5px
+        padding-left: 0.2em
+        margin-left: 1.0em
+    .abstract-logo
+      position: absolute
+      max-width: 100%
+
+/*** Small Screen ***/
+@media screen and (max-width: $small-screen)
+  .bilboard-section
+    height: 100vh
+    a.logo
+      margin-left: 0
+    h1
+      width: 300px
+      margin-top: 40px
+      text-align: center
+      font-size: 2.80em
+
+    .green-text
+      padding-right: 2.5em
+      padding-left: 1.8em
+    .abstract-logo
+      position: absolute
+      max-width: 100%
+      top: 20%
+    .down-arrow
+      bottom: 10%
+
+/****** Animation *****/
+@-webkit-keyframes animate
+  0%
+    bottom: 15.5%
+  100%
+    bottom: 18%
+
+@keyframes animate
+  0%
+    bottom: 15.5%
+  100%
+     bottom: 18%

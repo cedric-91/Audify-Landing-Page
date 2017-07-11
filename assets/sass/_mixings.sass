@@ -1,0 +1,219 @@
+/*** Style guide ***/
+.down-arrow
+  text-decoration: none
+  position: absolute
+  bottom: 15.5%
+  left: 50%
+  width: 5px
+  height: 40.5px
+  display: block
+  transform: translateX(-50%)
+  padding: 0.6em
+  background: transparent url(../img/white-arrow.png) 50% 50% repeat
+  font-size: 1.2em
+  +box-sizing(border-box)
+  +transition(background 200ms ease-in 0s)
+  +animation(animate 1.2s infinite)
+
+.down-arrow:hover
+  background: transparent url(../img/green-arrow.png) 50% 50% repeat
+
+.gradient-1
+  background : -moz-linear-gradient(50% 100% 90deg,rgba(83, 67, 91, 1) 0%,rgba(77, 63, 91, 1) 5.43%,rgba(65, 55, 91, 1) 20.84%,rgba(58, 50, 91, 1) 42.32%,rgba(56, 49, 91, 1) 100%)
+  background : -webkit-linear-gradient(90deg, rgba(83, 67, 91, 1) 0%, rgba(77, 63, 91, 1) 5.43%, rgba(65, 55, 91, 1) 20.84%, rgba(58, 50, 91, 1) 42.32%, rgba(56, 49, 91, 1) 100%)
+  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(83, 67, 91, 1) ),color-stop(0.0543,rgba(77, 63, 91, 1) ),color-stop(0.2084,rgba(65, 55, 91, 1) ),color-stop(0.4232,rgba(58, 50, 91, 1) ),color-stop(1,rgba(56, 49, 91, 1) ))
+  background : -o-linear-gradient(90deg, rgba(83, 67, 91, 1) 0%, rgba(77, 63, 91, 1) 5.43%, rgba(65, 55, 91, 1) 20.84%, rgba(58, 50, 91, 1) 42.32%, rgba(56, 49, 91, 1) 100%)
+  background : -ms-linear-gradient(90deg, rgba(83, 67, 91, 1) 0%, rgba(77, 63, 91, 1) 5.43%, rgba(65, 55, 91, 1) 20.84%, rgba(58, 50, 91, 1) 42.32%, rgba(56, 49, 91, 1) 100%)
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#53435B', endColorstr='#38315B' ,GradientType=0)"
+  background : linear-gradient(0deg, rgba(83, 67, 91, 1) 0%, rgba(77, 63, 91, 1) 5.43%, rgba(65, 55, 91, 1) 20.84%, rgba(58, 50, 91, 1) 42.32%, rgba(56, 49, 91, 1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#38315B',endColorstr='#53435B' , GradientType=0)
+
+.gradient-2
+  background : -moz-linear-gradient(-25.07% 12.52% -45deg,rgba(83, 67, 91, 1) 0%,rgba(82, 66, 91, 1) 3.47%,rgba(63, 54, 91, 1) 60.27%,rgba(56, 49, 91, 1) 100%)
+  background : -webkit-linear-gradient(-45deg, rgba(83, 67, 91, 1) 0%, rgba(82, 66, 91, 1) 3.47%, rgba(63, 54, 91, 1) 60.27%, rgba(56, 49, 91, 1) 100%)
+  background : -webkit-gradient(linear,-25.07% 12.52% ,125.07% 87.48% ,color-stop(0,rgba(83, 67, 91, 1) ),color-stop(0.0347,rgba(82, 66, 91, 1) ),color-stop(0.6027,rgba(63, 54, 91, 1) ),color-stop(1,rgba(56, 49, 91, 1) ))
+  background : -o-linear-gradient(-45deg, rgba(83, 67, 91, 1) 0%, rgba(82, 66, 91, 1) 3.47%, rgba(63, 54, 91, 1) 60.27%, rgba(56, 49, 91, 1) 100%)
+  background : -ms-linear-gradient(-45deg, rgba(83, 67, 91, 1) 0%, rgba(82, 66, 91, 1) 3.47%, rgba(63, 54, 91, 1) 60.27%, rgba(56, 49, 91, 1) 100%)
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#53435B', endColorstr='#38315B' ,GradientType=0)"
+  background : linear-gradient(135deg, rgba(83, 67, 91, 1) 0%, rgba(82, 66, 91, 1) 3.47%, rgba(63, 54, 91, 1) 60.27%, rgba(56, 49, 91, 1) 100%)
+  opacity : 0.8
+  filter: alpha(opacity=80) progid:DXImageTransform.Microsoft.Alpha(opacity=80) progid:DXImageTransform.Microsoft.gradient(startColorstr='#53435B',endColorstr='#38315B' , GradientType=1)
+
+.gradient-3
+  background : -moz-linear-gradient(50% 100% 90deg,rgba(56, 49, 91, 1) 0%,rgba(63, 54, 91, 1) 39.73%,rgba(82, 66, 91, 1) 96.53%,rgba(83, 67, 91, 1) 100%)
+  background : -webkit-linear-gradient(90deg, rgba(56, 49, 91, 1) 0%, rgba(63, 54, 91, 1) 39.73%, rgba(82, 66, 91, 1) 96.53%, rgba(83, 67, 91, 1) 100%)
+  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(56, 49, 91, 1) ),color-stop(0.3973,rgba(63, 54, 91, 1) ),color-stop(0.9653,rgba(82, 66, 91, 1) ),color-stop(1,rgba(83, 67, 91, 1) ))
+  background : -o-linear-gradient(90deg, rgba(56, 49, 91, 1) 0%, rgba(63, 54, 91, 1) 39.73%, rgba(82, 66, 91, 1) 96.53%, rgba(83, 67, 91, 1) 100%)
+  background : -ms-linear-gradient(90deg, rgba(56, 49, 91, 1) 0%, rgba(63, 54, 91, 1) 39.73%, rgba(82, 66, 91, 1) 96.53%, rgba(83, 67, 91, 1) 100%)
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#38315B', endColorstr='#53435B' ,GradientType=0)"
+  background : linear-gradient(0deg, rgba(56, 49, 91, 1) 0%, rgba(63, 54, 91, 1) 39.73%, rgba(82, 66, 91, 1) 96.53%, rgba(83, 67, 91, 1) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#53435B',endColorstr='#38315B' , GradientType=0)
+
+.green-text
+  color: #c5d100
+
+.button-text
+  font-size: 22.6px
+
+.btn-link
+  background-color: #c5d100
+  color: #38315b
+  padding: 0.6em 2.5em
+  text-decoration: none
+  border-radius: 0.3em
+  font-weight: bold
+  font-family: "open sans"
+
+.green-text-header
+  font-size: 48px
+
+.main-content
+  position: relative
+
+.lead-text
+  margin: 1.2em 0
+  //margin-bottom: 1.2em
+  //
+.spinner
+  +animation(rotate-3d 4s)
+
+.down-arrow
+  text-decoration: none
+  position: absolute
+  bottom: 15.5%
+  left: 50%
+  width: 5px
+  height: 40.5px
+  display: block
+  transform: translateX(-50%)
+  padding: 0.6em
+  background: transparent url(../img/white-arrow.png) 50% 50% repeat
+  font-size: 1.2em
+  +box-sizing(border-box)
+  +transition(background 200ms ease-in 0s)
+  +animation(animate 1.2s infinite)
+
+.down-arrow:hover
+  background: transparent url(../img/green-arrow.png) 50% 50% repeat
+
+.active
+  background-color: #c5d100
+  transform: scale(1.2)
+
+h2.break-heading
+  margin: -0.2em 0
+
+.content
+  position: absolute
+  top: 0
+  width: 500px
+  height: inherit
+  color: white
+.content-left
+  left: 0
+.content-right
+  right: 0
+
+.content-info
+  width: 50%
+  padding: 0 3.0em
+  +box-sizing(border-box)
+
+.inner-content
+  position: relative
+  top: 50%
+  +transform(translate(0, -50%))
+  padding: 0 3.0em
+
+.center
+  +flex
+  +justify-content(center)
+  +align-items(center)
+
+.scale-animation
+  +transform(scale(1))
+
+.first-p
+  margin-bottom: 20px
+
+#siri
+  width: 100%
+  height: 400px
+  //background: pink
+  position: relative
+  left: -10px
+/*** Rotate Icons Clockwise ***/
+.rotate-clockwise
+  +animation(rotate 600ms)
+
+@keyframes rotate
+  0%
+    +transform(rotate(0deg))
+  100%
+    +transform(rotate(360deg))
+
+@-webkit-keyframes rotate
+  0%
+    +transform(rotate(0deg))
+  100%
+    +transform(rotate(360deg))
+
+/*** Rotate Icons Anti Clockwise ***/
+.rotate-anti-clockwise
+  +animation(anti-rotate 400ms)
+
+@keyframes anti-rotate
+  0%
+    +transform(rotate(0deg))
+  100%
+    +transform(rotate(-360deg))
+
+@-webkit-keyframes anti-rotate
+  0%
+    +transform(rotate(0deg))
+  100%
+    +transform(rotate(-360deg))
+
+/*** Medium Screen ***/
+@media screen and (max-width: $medium-screen)
+  .lead-text
+    font-size: $medium-font-text
+
+  .btn-link
+    top: 1.8em
+    font-size: 0.8em
+    position: relative
+
+/*** Extra Medium Small Screen ****/
+@media screen and (max-width: $extra-small-large-screen)
+  .content
+    width: 50%
+  .content-info
+    width: 95.5%
+
+/*** Medium Large Screen ****/
+@media screen and (max-width: $medium-large-screen)
+  .lead-text
+    margin: 0.2em 0
+  .content-info
+    width: 100%
+    padding: 0 3.5em
+  .btn-link
+    font-size: 0.75em
+
+/*** Small Screen ***/
+@media screen and (max-width: $small-screen)
+  .content-info
+    width: 100%
+
+  .btn-link
+    font-size: 0.76em
+
+/*** Smaller Screen ***/
+@media screen and (max-width: $smaller-screen) and (min-width: 300px)
+  .content-info
+    width: 100%
+  .btn-link
+    font-size: 0.25em
+  .lead-text
+    margin-bottom: 0.2em

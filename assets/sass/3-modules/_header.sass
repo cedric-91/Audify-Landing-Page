@@ -1,0 +1,52 @@
+@import "../_variables"
+
+header
+  padding: 0.4em 0.8em
+  width: auto
+  height: auto
+  position: fixed
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
+  color: white
+  z-index: 1
+  padding: 0 2.5em
+
+  ul
+    li
+      width: 15px
+      height: 15px
+      list-style: none
+      margin: 2.5em 0
+      border-radius: 50%
+      background-color: white
+      cursor: pointer
+      transition: all 200ms ease-in 0s
+      position: relative
+      display: block
+      left: 20px
+      &:first-child
+        margin-top: 0
+      &:last-child
+        margin-bottom: 0
+      &:hover
+        transform: scale(1.2)
+      a
+        text-decoration: none
+        color: black
+        position: absolute
+        right: 50%
+        top: 50%
+        transform: translateY(-50%)
+        text-align: center
+        width: 100px
+        //padding: 0.2em 0
+        border-radius: 0.6em 0 0 0.6em
+        display: none
+        cursor: pointer
+        font-size: 0.6em
+        font-family: "Open Sans", sans-serif
+
+header ul li:hover, header ul li:hover a
+  display: block
+  background-color: #c5d100
